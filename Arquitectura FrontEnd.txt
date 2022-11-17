@@ -1,0 +1,10 @@
+Arquitectura de FrontEnd
+
+view: Únicamente archivos html, se construye el esqueleto de la vista. Para utilizar css, img, doc, js, o demás elementos requeridos, vinculan mediante atributo permitido por la etiqueta html (script->src, link->href)
+
+js: Únicamente archivos js, si se requiere de algún elemento adicional, realizar vinculación por método permitodo.
+
+asset: Construir directorios, tantos como sea requerido. Ejemplo:
+	img, css, library, icon, doc, bd o demás elementos requeridos.
+	
+Nota: Mantener integridad de los datos. Si se plantea en minúscula y singular, mantener esta política, (camelCase, PascalCase, unders_core), sugerencia -> camelCase
