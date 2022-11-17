@@ -8,20 +8,20 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "departamentos") 
-public class Departamentos {
+@Table(name="unidades_medidas")
+public class UnidadesMedidas {
 
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     
-    @Column(name = "codigo_postal", nullable = false, unique = true)
-    private String codigoPostal; 
-    
-    @Column(name = "nombre", nullable = false, unique = true)
+	@Column(name = "nombre", nullable = false, length = 50, unique = true)
     private String nombre;
-    
-    @Column(name = "estado", nullable = false, unique = true)
+	
+	@Column(name = "descripcion", nullable = false, length = 200)
+    private String descripcion;
+	
+	@Column(name = "estado", nullable = false)
     private boolean estado;
 
 	public Integer getId() {
@@ -32,14 +32,6 @@ public class Departamentos {
 		this.id = id;
 	}
 
-	public String getCodigoPostal() {
-		return codigoPostal;
-	}
-
-	public void setCodigoPostal(String codigoPostal) {
-		this.codigoPostal = codigoPostal;
-	}
-
 	public String getNombre() {
 		return nombre;
 	}
@@ -48,12 +40,20 @@ public class Departamentos {
 		this.nombre = nombre;
 	}
 
-	public boolean isEstado() {
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public boolean getEstado() {
 		return estado;
 	}
 
 	public void setEstado(boolean estado) {
 		this.estado = estado;
-	}          
-    
+	}	
+	
 }
