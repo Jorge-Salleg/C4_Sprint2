@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "660ca270-cf95-4286-b86d-1fb6264929f1",
+		"name": "3er Colleccion_Brand_SQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "24324184-660ca270-cf95-4286-b86d-1fb6264929f1"
+	},
+	"item": [
+		{
+			"name": "localhost:9011/api/inventory/user",
+			"id": "e7b03e76-3c62-4694-a6e2-f96bfa49a90c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9011/api/inventory/brand",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"brand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9011/api/inventory/user",
+			"id": "ecac13bd-2be9-4368-85c1-aec6a67b0968",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Polo\",\r\n    \"descripcion\":\"Prendas Polo\",\r\n    \"estado\":\"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9011/api/inventory/brand",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"brand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9011/api/inventory/user",
+			"id": "8f180726-1600-4e35-ae24-de7dd3a8228f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Polo\",\r\n    \"descripcion\":\"Prendas Polo\",\r\n    \"estado\":\"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9011/api/inventory/brand/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"brand",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9011/api/inventory/user",
+			"id": "b7e549b9-67ac-4e12-ae6b-1d846312786d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9011/api/inventory/brand/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"brand",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

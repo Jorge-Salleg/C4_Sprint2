@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "8abebeda-34fb-4611-8f84-6accbcbbdf2a",
+		"name": "1er Colleccion_User_SQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "24324184-8abebeda-34fb-4611-8f84-6accbcbbdf2a"
+	},
+	"item": [
+		{
+			"name": "Consulta",
+			"id": "34c2a1ba-ff9d-47a7-a6f2-11fb048cc96c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombres\":\"Jorge Antonio\", \t\r\n\t\"apellidos\", \t\r\n\t\"documento\",\t\r\n\t\"correo\",\r\n\t\"estado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9011/api/inventory/user",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear",
+			"id": "36b6a808-93fa-48f8-b28f-9d64a962e5d3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"\",\r\n    \"apellidos\":\"\",\r\n    \"documento\":\"1065600308\",\r\n    \"correo\":\"sergio.salleg@gimsaber.edu.co\"\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9011/api/inventory/user",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar",
+			"id": "735ac1de-392c-4217-a44e-d42b5c4c9e6b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Jorge A\",\r\n    \"apellidos\":\"Salleg Aviles\",\r\n    \"documento\":\"77094583\",\r\n    \"correo\":\"jorge.salleg@gimsaber.edu.co\",\r\n    \"estado\":\"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9011/api/inventory/user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar",
+			"id": "b4312c35-ca08-46f5-82d1-277039df82e6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9011/api/inventory/user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

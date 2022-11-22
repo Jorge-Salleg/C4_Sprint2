@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "bb9039cd-9cbe-457d-a6b5-fe4125bc5cf2",
+		"name": "4ta Collection_Product_SQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "24324184-bb9039cd-9cbe-457d-a6b5-fe4125bc5cf2"
+	},
+	"item": [
+		{
+			"name": "Producto _Consulta",
+			"id": "1cc988cf-cc38-4a79-a4e3-9e484a95c427",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9011/api/inventory/product",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Producto _Crear",
+			"id": "d6a3b1b3-1f20-4626-9de7-b63297b4f6df",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Camiseta Rosada\",\r\n    \"descripcion\": \"Camiseta Rosada\",\r\n    \"estado\": 1,\r\n    \"marcaId\": {\r\n        \"id\": 1\r\n    },\r\n    \"categoriaId\": {\r\n        \"id\": 1\r\n    },\r\n    \"unidadMedidaId\": {\r\n        \"id\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9011/api/inventory/product",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Producto _Actualizar",
+			"id": "5c052181-f047-4922-9cee-47e73632ce5e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nombre\": \"Camiseta\",\r\n        \"descripcion\": \"Camisetas\",\r\n        \"estado\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/inventory/product/637c3824f5d40251deec797f",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"inventory",
+						"product",
+						"637c3824f5d40251deec797f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Producto _Borrar",
+			"id": "6b1993a3-ae44-487d-870b-864db6c87a9b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/inventory/product/637c3011f5d40251deec7978",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"inventory",
+						"product",
+						"637c3011f5d40251deec7978"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

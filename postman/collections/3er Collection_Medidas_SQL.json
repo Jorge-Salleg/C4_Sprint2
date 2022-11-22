@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "fffe3bb9-ec7f-4008-9baf-fc97f9b059ad",
+		"name": "3er Collection_Medidas_SQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "24324184-fffe3bb9-ec7f-4008-9baf-fc97f9b059ad"
+	},
+	"item": [
+		{
+			"name": "Medida _Consulta",
+			"id": "3f67cf1b-467a-4c59-81a2-aecf6f061c15",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9011/api/inventory/unitMeasure",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"unitMeasure"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Medida _Crear",
+			"id": "fafcb738-fae9-4c45-9b2e-198743cc9a72",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Talla S\",\r\n    \"descripcion\":\"Talla S\",\r\n    \"estado\":\"true\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9011/api/inventory/unitMeasure",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"unitMeasure"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Medida _Actualizar",
+			"id": "fea6bfff-32e6-4aee-8319-d36f1086b3f7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nombre\": \"Camiseta\",\r\n        \"descripcion\": \"Camisetas\",\r\n        \"estado\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9011/api/inventory/unitMeasure/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"unitMeasure",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Medida _Borrar",
+			"id": "f1a81447-31d8-4060-8841-72e491236085",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/inventory/unitMeasure",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"inventory",
+						"unitMeasure"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

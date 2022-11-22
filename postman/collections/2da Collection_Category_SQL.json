@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "04c843c5-8329-431d-988d-2570e7108d81",
+		"name": "2da Collection_Category_SQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "24324184-04c843c5-8329-431d-988d-2570e7108d81"
+	},
+	"item": [
+		{
+			"name": "localhost:9011/api/inventory/category",
+			"id": "df93a32a-88c0-40be-9f6e-51f102a181ad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9011/api/inventory/category",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9011/api/inventory/category",
+			"id": "ee9a2674-f4a2-4780-923a-2a45135272b2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Polo\",\r\n    \"descripcion\":\"Camiseta Polo\",\r\n    \"estado\":\"true\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9011/api/inventory/category",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9011/api/inventory/category/1",
+			"id": "0dc9bcd4-9ab3-48ee-b373-5ab4d28e202b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nombre\": \"Camiseta Dama\",\r\n        \"descripcion\": \"Camisetas Dama\",\r\n        \"estado\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9011/api/inventory/category/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"category",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9011/api/inventory/category/1",
+			"id": "c0df8f6c-7847-4ad3-834a-8efe2cee8300",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9011/api/inventory/category/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"inventory",
+						"category",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
